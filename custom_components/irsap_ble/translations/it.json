@@ -1,0 +1,47 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Aggiungi radiatori IRSAP",
+        "description": "Questi radiatori sono stati trovati via Bluetooth. Seleziona quelli da aggiungere.",
+        "data": {
+          "devices": "Radiatori"
+        }
+      },
+      "name": {
+        "title": "Dai un nome al radiatore",
+        "description": "Radiatore {device}. Scegli il nome dell'entità (per esempio la stanza).",
+        "data": {
+          "name": "Nome"
+        }
+      },
+      "confirm": {
+        "title": "Aggiungi radiatore IRSAP",
+        "description": "Radiatore {device}. Scegli il nome dell'entità (per esempio la stanza).",
+        "data": {
+          "name": "Nome"
+        }
+      }
+    },
+    "error": {
+      "none_selected": "Seleziona almeno un radiatore."
+    },
+    "abort": {
+      "no_devices_found": "Nessun nuovo radiatore IRSAP trovato via Bluetooth. Chiudi l'app IRSAP NOW, avvicinati al radiatore (o a un proxy Bluetooth) e riprova.",
+      "already_configured": "Questo radiatore è già configurato."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opzioni IRSAP",
+        "description": "La temperatura Comfort viene riscritta nel radiatore quando imposti la modalità Riscalda (riprende il programma). L'intervallo è ogni quanto Home Assistant si collega per leggere lo stato.",
+        "data": {
+          "comfort_temp": "Temperatura Comfort",
+          "scan_interval": "Intervallo di lettura (secondi)"
+        }
+      }
+    }
+  }
+}

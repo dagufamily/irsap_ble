@@ -1,0 +1,47 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Add IRSAP radiators",
+        "description": "These radiators were found by Bluetooth. Select the ones to add.",
+        "data": {
+          "devices": "Radiators"
+        }
+      },
+      "name": {
+        "title": "Name the radiator",
+        "description": "Radiator {device}. Choose the name of the entity (for example the room).",
+        "data": {
+          "name": "Name"
+        }
+      },
+      "confirm": {
+        "title": "Add IRSAP radiator",
+        "description": "Radiator {device}. Choose the name of the entity (for example the room).",
+        "data": {
+          "name": "Name"
+        }
+      }
+    },
+    "error": {
+      "none_selected": "Select at least one radiator."
+    },
+    "abort": {
+      "no_devices_found": "No new IRSAP radiators found by Bluetooth. Close the IRSAP NOW app, move closer to the radiator (or to a Bluetooth proxy) and try again.",
+      "already_configured": "This radiator is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "IRSAP options",
+        "description": "The Comfort temperature is written back to the radiator when you set the mode to Heat (the radiator program resumes). The polling interval is how often Home Assistant connects to read the state.",
+        "data": {
+          "comfort_temp": "Comfort temperature",
+          "scan_interval": "Polling interval (seconds)"
+        }
+      }
+    }
+  }
+}
